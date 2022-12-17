@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Caveat', cursive;;
+}
+
+.main-bg {
+  min-height: 100vh; /* Full visualization */
+  background: linear-gradient(to right top,#65dfc9, #6cdbeb);
+  display: flex; /* we want to add this to make work those remaining 2 styles */
+  align-items: center;  /*Center it to vertical place */
+  justify-content: center; /*Center it to Horizontal place */
+}
+
+.glass {
+  background: white;
+  min-height: 80vh ;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.put {
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  border-radius: 100rem;
+  flex: 0.1;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s linear;
+}
+
+
+.put input {
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  border: none;
+  width: 40%;
+  padding: 0.2rem;
+  border-radius: 2rem;
+  transition: 0.2s linear;
+  cursor: text;
+}
+
+.put input:hover {
+  width: 80%;
+}
+
+.put input:focus{
+  width: 80%;
+  display: block;
+}
+
+div.todos {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 2rem;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+form {
+  display: flex;
+  min-width: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  width: 70%;
+  border-radius: 2rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  margin-top: 1rem;
+  overflow: auto;
+  position: relative;
+}
+
+button {
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  cursor: pointer;
+  border-radius: 2rem;
+  width: 7vh;
+  border: none;
+  height: 3vh;
+}
+
+button:hover {
+  background: #7AD7FD;
+}
+
+.del {
+  position: absolute;
+  margin-left: 80vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 2rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7AD7FD; 
+  border-radius: 2rem;
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e80c1; 
+}
